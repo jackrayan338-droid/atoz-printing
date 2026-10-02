@@ -1,306 +1,342 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flex Banner Printing (A to Z Printing) | Prayagraj Leading Signage & Printing Agency</title>
-  <meta name="description" content="A to Z Printing Prayagraj - Premier Flex Banner, Glow Sign Board, LED ACP Board, Vinyl Lamination, Hoardings, Standee & Complete Outdoor Advertisement Services across all Prayagraj areas.">
-  <meta name="keywords" content="Flex printing Prayagraj, Banner printing Prayagraj, Glow sign board maker Prayagraj, Vinyl printing Civil lines, Hoardings George Town, Standee printing Katra, LED board manufacturer Prayagraj, Digital printing service Prayagraj">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Flex Banner Printing (A to Z Printing) | Prayagraj</title>
+  <meta name="description" content="A to Z Printing Prayagraj - Premium Flex Banner, Glow Sign Board, LED ACP Board, Vinyl Lamination, Hoardings, Standee & Complete Outdoor Advertisement in all Prayagraj areas.">
+  <meta name="keywords" content="Flex printing Prayagraj, Banner printing Prayagraj, Glow sign board Prayagraj, Vinyl printing Civil lines, Hoardings George Town, Standee printing Katra, LED board Prayagraj">
   
-  <!-- Fonts & Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <style>
     :root {
-      --primary: #0F172A;
-      --accent: #E11D48;
-      --accent-hover: #BE123C;
-      --gold: #F59E0B;
-      --whatsapp: #25D366;
-      --text-main: #1E293B;
-      --text-muted: #64748B;
-      --bg-light: #F8FAFC;
-      --white: #FFFFFF;
-      --border: #E2E8F0;
-      --card-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.08);
-      --card-hover: 0 20px 40px -10px rgba(225, 29, 72, 0.15);
+      --primary: #0b132b;
+      --brand: #e63946;
+      --brand-dark: #b51726;
+      --accent: #25d366;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #1e293b;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --radius: 14px;
+      --shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.06);
     }
 
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Plus Jakarta Sans', sans-serif; }
-    body { background-color: var(--bg-light); color: var(--text-main); line-height: 1.6; padding-bottom: 70px; }
-    h1, h2, h3, h4 { font-family: 'Outfit', sans-serif; font-weight: 700; }
-    
-    /* Top Bar */
-    .top-strip { background: #020617; color: #94A3B8; font-size: 0.85rem; padding: 8px 16px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #1E293B; }
-    .top-strip span i { color: var(--accent); margin-right: 6px; }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Plus Jakarta Sans', sans-serif; -webkit-tap-highlight-color: transparent; }
+    body { background-color: var(--bg); color: var(--text); line-height: 1.5; padding-bottom: 85px; }
 
-    /* Navigation */
-    header { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 15px rgba(0,0,0,0.05); }
-    .nav-container { max-width: 1200px; margin: auto; display: flex; justify-content: space-between; align-items: center; padding: 16px 20px; }
-    .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
-    .brand-icon { width: 44px; height: 44px; background: linear-gradient(135deg, var(--accent), #9F1239); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.4rem; font-weight: 800; box-shadow: 0 4px 12px rgba(225,29,72,0.3); }
-    .brand-text h1 { font-size: 1.3rem; color: var(--primary); line-height: 1.1; }
-    .brand-text span { font-size: 0.75rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+    /* Header */
+    header { background: #ffffff; border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,0.03); }
+    .nav { max-width: 600px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 12px 16px; }
+    .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .logo-badge { background: linear-gradient(135deg, var(--brand), var(--brand-dark)); color: #fff; font-weight: 800; font-size: 1.1rem; width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; }
+    .brand-info h1 { font-size: 1.05rem; font-weight: 700; color: var(--primary); line-height: 1.2; }
+    .brand-info span { font-size: 0.72rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase; }
 
-    /* Hero Section */
-    .hero { background: linear-gradient(135deg, #0F172A 0%, #1E1B4B 100%); color: white; padding: 60px 20px 80px; position: relative; overflow: hidden; text-align: center; }
-    .hero::before { content: ""; position: absolute; top: -50%; left: -20%; width: 500px; height: 500px; background: radial-gradient(circle, rgba(225, 29, 72, 0.25) 0%, transparent 70%); border-radius: 50%; pointer-events: none; }
-    .hero-container { max-width: 900px; margin: auto; position: relative; z-index: 2; }
-    .badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); padding: 6px 16px; border-radius: 50px; font-size: 0.85rem; color: #FDE047; font-weight: 600; margin-bottom: 20px; }
-    .hero h2 { font-size: clamp(2rem, 5vw, 3.2rem); line-height: 1.15; margin-bottom: 18px; letter-spacing: -0.5px; }
-    .hero h2 span { background: linear-gradient(135deg, #FB7185, #F43F5E); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-    .hero p { font-size: 1.1rem; color: #CBD5E1; max-width: 750px; margin: 0 auto 30px; font-weight: 400; }
-    
-    .hero-cta { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
-    .btn { display: inline-flex; align-items: center; gap: 10px; padding: 14px 28px; border-radius: 10px; font-weight: 600; font-size: 0.95rem; text-decoration: none; transition: all 0.3s ease; }
-    .btn-primary { background: var(--accent); color: white; box-shadow: 0 4px 15px rgba(225,29,72,0.4); }
-    .btn-primary:hover { background: var(--accent-hover); transform: translateY(-2px); }
-    .btn-wa { background: var(--whatsapp); color: white; box-shadow: 0 4px 15px rgba(37,211,102,0.3); }
-    .btn-wa:hover { transform: translateY(-2px); }
+    /* Mobile Hero */
+    .hero { background: linear-gradient(135deg, #0b132b 0%, #1c2541 100%); color: #fff; padding: 28px 16px 36px; text-align: center; }
+    .hero-wrap { max-width: 600px; margin: 0 auto; }
+    .tag-badge { display: inline-flex; align-items: center; gap: 6px; background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2); padding: 5px 12px; border-radius: 50px; font-size: 0.75rem; color: #fde047; font-weight: 600; margin-bottom: 14px; }
+    .hero h2 { font-size: 1.6rem; font-weight: 800; line-height: 1.25; margin-bottom: 10px; }
+    .hero h2 span { color: #ff6b6b; }
+    .hero p { font-size: 0.88rem; color: #cbd5e1; margin-bottom: 20px; }
+    .hero-btn-group { display: flex; flex-direction: column; gap: 10px; }
+    .btn { display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; padding: 12px 18px; border-radius: 10px; font-weight: 700; font-size: 0.92rem; text-decoration: none; border: none; cursor: pointer; transition: 0.2s; }
+    .btn-wa { background: var(--accent); color: #fff; }
+    .btn-call { background: rgba(255,255,255,0.15); color: #fff; border: 1px solid rgba(255,255,255,0.3); }
 
-    /* Trust Stats */
-    .stats-bar { max-width: 1100px; margin: -40px auto 40px; background: white; border-radius: 16px; padding: 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; box-shadow: var(--card-shadow); border: 1px solid var(--border); text-align: center; position: relative; z-index: 10; }
-    .stat-item h3 { font-size: 2rem; color: var(--accent); line-height: 1; margin-bottom: 4px; }
-    .stat-item p { font-size: 0.85rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase; }
+    /* Highlights */
+    .highlights { max-width: 600px; margin: -16px auto 20px; padding: 0 16px; position: relative; z-index: 10; }
+    .h-card { background: #fff; border-radius: var(--radius); padding: 14px 10px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; text-align: center; box-shadow: var(--shadow); border: 1px solid var(--border); }
+    .h-item h4 { font-size: 1.15rem; color: var(--brand); font-weight: 800; line-height: 1.1; }
+    .h-item p { font-size: 0.7rem; color: var(--text-muted); font-weight: 600; margin-top: 2px; }
 
-    /* Products Section */
-    .section { max-width: 1200px; margin: 60px auto; padding: 0 20px; }
-    .section-head { text-align: center; max-width: 750px; margin: 0 auto 40px; }
-    .section-head .tag { font-size: 0.85rem; color: var(--accent); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 8px; }
-    .section-head h2 { font-size: 2.2rem; color: var(--primary); margin-bottom: 12px; }
-    .section-head p { color: var(--text-muted); font-size: 1rem; }
+    /* Products Feed */
+    .container { max-width: 600px; margin: 0 auto; padding: 0 16px; }
+    .section-title { margin: 26px 0 14px; }
+    .section-title span { font-size: 0.72rem; text-transform: uppercase; font-weight: 700; color: var(--brand); letter-spacing: 0.5px; }
+    .section-title h3 { font-size: 1.35rem; color: var(--primary); font-weight: 800; line-height: 1.2; }
 
-    .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; }
-    .product-card { background: white; border-radius: 16px; overflow: hidden; border: 1px solid var(--border); box-shadow: var(--card-shadow); transition: all 0.3s ease; display: flex; flex-direction: column; }
-    .product-card:hover { transform: translateY(-6px); box-shadow: var(--card-hover); border-color: rgba(225,29,72,0.3); }
-    .product-img { width: 100%; height: 210px; object-fit: cover; background: #E2E8F0; }
-    .product-body { padding: 22px; flex-grow: 1; display: flex; flex-direction: column; }
-    .product-body h3 { font-size: 1.25rem; color: var(--primary); margin-bottom: 8px; }
-    .product-body p { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 16px; flex-grow: 1; }
-    .product-features { list-style: none; margin-bottom: 20px; }
-    .product-features li { font-size: 0.85rem; color: #475569; display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
-    .product-features li i { color: var(--accent); font-size: 0.75rem; }
-    .card-btn { width: 100%; justify-content: center; padding: 10px 16px; border-radius: 8px; font-size: 0.85rem; }
+    .product-list { display: flex; flex-direction: column; gap: 18px; }
+    .card { background: var(--card-bg); border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border); box-shadow: var(--shadow); }
+    .card-img-wrap { width: 100%; height: 200px; overflow: hidden; position: relative; background: #e2e8f0; }
+    .card-img-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .card-badge { position: absolute; top: 10px; left: 10px; background: rgba(11, 19, 43, 0.85); backdrop-filter: blur(4px); color: #fff; font-size: 0.7rem; font-weight: 700; padding: 4px 10px; border-radius: 6px; }
+    .card-body { padding: 16px; }
+    .card-body h4 { font-size: 1.15rem; color: var(--primary); font-weight: 700; margin-bottom: 6px; }
+    .card-body p { font-size: 0.84rem; color: var(--text-muted); margin-bottom: 12px; }
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+    .tag { font-size: 0.72rem; background: #f1f5f9; color: #475569; padding: 4px 8px; border-radius: 6px; font-weight: 600; }
+    .card-btn { background: #f8fafc; border: 1px solid var(--border); color: var(--primary); font-size: 0.85rem; font-weight: 700; padding: 10px; border-radius: 8px; }
+    .card-btn:hover { background: var(--brand); color: #fff; border-color: var(--brand); }
 
-    /* Prayagraj Areas Cloud */
-    .coverage-section { background: white; border-radius: 20px; border: 1px solid var(--border); padding: 40px; box-shadow: var(--card-shadow); }
-    .areas-cloud { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 25px; justify-content: center; }
-    .area-chip { background: var(--bg-light); border: 1px solid #CBD5E1; color: #334155; padding: 8px 16px; border-radius: 50px; font-size: 0.85rem; font-weight: 600; display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s; }
-    .area-chip i { color: var(--accent); font-size: 0.75rem; }
-    .area-chip:hover { background: var(--primary); color: white; border-color: var(--primary); }
+    /* Area Chips */
+    .area-box { background: #fff; border-radius: var(--radius); padding: 18px; border: 1px solid var(--border); box-shadow: var(--shadow); margin-top: 10px; }
+    .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+    .chip { font-size: 0.76rem; background: #f1f5f9; border: 1px solid #e2e8f0; padding: 6px 12px; border-radius: 50px; font-weight: 600; color: #334155; display: inline-flex; align-items: center; gap: 4px; }
+    .chip i { color: var(--brand); font-size: 0.65rem; }
 
-    /* Sticky Bottom Action */
-    .mobile-dock { position: fixed; bottom: 0; left: 0; width: 100%; background: white; border-top: 1px solid var(--border); padding: 10px 16px; display: flex; gap: 12px; z-index: 1000; box-shadow: 0 -4px 20px rgba(0,0,0,0.08); }
+    /* Footer Note */
+    .footer { text-align: center; padding: 25px 16px 10px; font-size: 0.78rem; color: var(--text-muted); }
+
+    /* Sticky Bottom Mobile Bar */
+    .bottom-bar { position: fixed; bottom: 0; left: 0; width: 100%; background: #ffffff; border-top: 1px solid var(--border); padding: 10px 16px; display: flex; gap: 10px; z-index: 999; box-shadow: 0 -4px 15px rgba(0,0,0,0.06); }
     .dock-btn { flex: 1; display: flex; align-items: center; justify-content: center; gap: 8px; padding: 12px; border-radius: 10px; text-decoration: none; font-weight: 700; font-size: 0.95rem; }
-    .dock-call { background: var(--primary); color: white; }
-    .dock-wa { background: var(--whatsapp); color: white; }
-
-    @media (max-width: 768px) {
-      .top-strip { display: none; }
-      .hero { padding: 40px 16px 60px; }
-      .coverage-section { padding: 25px 16px; }
-    }
+    .dock-call { background: var(--primary); color: #ffffff; }
+    .dock-wa { background: var(--accent); color: #ffffff; }
   </style>
 </head>
 <body>
 
-  <!-- Top Strip -->
-  <div class="top-strip">
-    <span><i class="fa-solid fa-location-dot"></i> Darbhanga Colony, George Town, Prayagraj - 211002</span>
-    <span><i class="fa-solid fa-clock"></i> 24x7 Express Delivery Across Prayagraj</span>
-  </div>
-
-  <!-- Header -->
+  <!-- Top Bar -->
   <header>
-    <div class="nav-container">
+    <div class="nav">
       <a href="#" class="brand">
-        <div class="brand-icon">A-Z</div>
-        <div class="brand-text">
-          <h1>Flex Banner Printing</h1>
-          <span>A to Z Printing • Prayagraj</span>
+        <div class="logo-badge">A-Z</div>
+        <div class="brand-info">
+          <h1>A to Z Printing</h1>
+          <span>George Town, Prayagraj</span>
         </div>
       </a>
-      <a href="tel:09598202021" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.85rem;">
-        <i class="fa-solid fa-phone"></i> Call Agency
+      <a href="tel:09598202021" style="color: var(--primary); font-size: 1.15rem; text-decoration: none; padding: 6px;">
+        <i class="fa-solid fa-phone"></i>
       </a>
     </div>
   </header>
 
-  <!-- Hero Banner -->
+  <!-- Mobile Hero -->
   <section class="hero">
-    <div class="hero-container">
-      <div class="badge">
-        <i class="fa-solid fa-crown"></i> #1 Outdoor Advertising & Printing Hub in Prayagraj
+    <div class="hero-wrap">
+      <div class="tag-badge">
+        <i class="fa-solid fa-bolt"></i> Same-Day Delivery in Prayagraj
       </div>
-      <h2>A to Z High-Impact <span>Printing & Signage</span> Solutions</h2>
-      <p>Specialized in Heavy-Duty Flex Banners, Glowing 3D LED Signages, Vinyl Graphics & Mega Hoardings with on-site installation across every locality in Prayagraj.</p>
+      <h2>Flex & Banner <span>Signage Hub</span></h2>
+      <p>High-resolution flex banner printing, acrylic 3D LED glow sign boards, standees & vinyl branding delivered across 30+ Prayagraj localities.</p>
       
-      <div class="hero-cta">
-        <a href="https://wa.me/919598202021?text=Namaste,%20A%20to%20Z%20Printing%20se%20flex%20aur%20advertisement%20print%20karwana%20hai" class="btn btn-wa">
+      <div class="hero-btn-group">
+        <a href="https://wa.me/919598202021?text=Namaste%20A%20to%20Z%20Printing,%20mujhe%20flex%20ya%20signage%20print%20karwana%20hai" class="btn btn-wa">
           <i class="fa-brands fa-whatsapp" style="font-size: 1.2rem;"></i> WhatsApp Direct Order
         </a>
-        <a href="tel:09598202021" class="btn btn-primary">
+        <a href="tel:09598202021" class="btn btn-call">
           <i class="fa-solid fa-phone-volume"></i> 095982 02021
         </a>
       </div>
     </div>
   </section>
 
-  <!-- Trust Stats -->
-  <div class="stats-bar">
-    <div class="stat-item">
-      <h3>100%</h3>
-      <p>Sharp Color Guarantee</p>
-    </div>
-    <div class="stat-item">
-      <h3>Same Day</h3>
-      <p>Rapid Dispatch In City</p>
-    </div>
-    <div class="stat-item">
-      <h3>30+ Areas</h3>
-      <p>Complete Local Coverage</p>
-    </div>
-    <div class="stat-item">
-      <h3>5★ Rated</h3>
-      <p>Corporate Trust</p>
+  <!-- Quick Highlight Cards -->
+  <div class="highlights">
+    <div class="h-card">
+      <div class="h-item">
+        <h4>1440</h4>
+        <p>DPI High Print</p>
+      </div>
+      <div class="h-item">
+        <h4>24/7</h4>
+        <p>Express Service</p>
+      </div>
+      <div class="h-item">
+        <h4>30+</h4>
+        <p>Localities Served</p>
+      </div>
     </div>
   </div>
 
-  <!-- Product & Service Grid (With Photos) -->
-  <section class="section">
-    <div class="section-head">
-      <span class="tag">Our Signature Products</span>
-      <h2>Tailored For Commercial & Event Promotion</h2>
-      <p>Engineered on state-of-the-art Japanese Solvent and UV roll-to-roll printers for weather-resistant, vibrant life.</p>
+  <!-- Products Showcase (Real Product Photos) -->
+  <main class="container">
+    <div class="section-title">
+      <span>Our Services & Products</span>
+      <h3>Har Tarah Ki Printing & Advertising</h3>
     </div>
 
-    <div class="product-grid">
+    <div class="product-list">
       
-      <!-- 1. Heavy Duty Flex & Star Flex -->
-      <div class="product-card">
-        <img class="product-img" src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=700&q=80" alt="Flex Banner Printing Prayagraj">
-        <div class="product-body">
-          <h3>Heavy Flex & Star Banner</h3>
-          <p>Weatherproof normal and high-gloss Star Flex ideal for shop signages, event backdrops, and promotional road campaigns.</p>
-          <ul class="product-features">
-            <li><i class="fa-solid fa-check"></i> High tensile tear-resistant fabric</li>
-            <li><i class="fa-solid fa-check"></i> Non-fading UV and rain-shield ink</li>
-            <li><i class="fa-solid fa-check"></i> Complete brass eyelet and rope finish</li>
-          </ul>
-          <a href="https://wa.me/919598202021?text=Hi,%20I%20want%20to%20order%20Heavy%20Flex%20or%20Star%20Banner" class="btn btn-primary card-btn">Inquire on WhatsApp</a>
+      <!-- 1. Solvent Flex Banner Machine Printing -->
+      <article class="card">
+        <div class="card-img-wrap">
+          <span class="card-badge">Bestseller</span>
+          <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=650&q=80" alt="Flex Banner Printing Machine Workshop Prayagraj">
         </div>
-      </div>
+        <div class="card-body">
+          <h4>Heavy Flex & Star Banner</h4>
+          <p>Heavy GSM normal flex aur high-gloss Star flex printing for shops, hoardings, event backdrops, and political campaigns.</p>
+          <div class="tags">
+            <span class="tag">Rainproof</span>
+            <span class="tag">Brass Eyelets</span>
+            <span class="tag">UV Protected</span>
+          </div>
+          <a href="https://wa.me/919598202021?text=Hi,%20Flex%20Banner%20ka%20rate%20chahiye" class="btn card-btn">
+            Order On WhatsApp <i class="fa-solid fa-arrow-right" style="margin-left: 6px; font-size: 0.8rem;"></i>
+          </a>
+        </div>
+      </article>
 
-      <!-- 2. LED Glow Sign & ACP Boards -->
-      <div class="product-card">
-        <img class="product-img" src="https://images.unsplash.com/photo-1542744094-3a31f272c490?auto=format&fit=crop&w=700&q=80" alt="Glow Sign Board Manufacturer Prayagraj">
-        <div class="product-body">
-          <h3>LED Glow Sign & ACP Signages</h3>
-          <p>Premium architectural ACP 3D acrylic embossed lettering and backlit glow sign boards that make your showroom stand out 24/7.</p>
-          <ul class="product-features">
-            <li><i class="fa-solid fa-check"></i> Branded Samsung/Osram LED modules</li>
-            <li><i class="fa-solid fa-check"></i> Rust-free heavy iron frame fabrication</li>
-            <li><i class="fa-solid fa-check"></i> Turnkey on-site installation support</li>
-          </ul>
-          <a href="https://wa.me/919598202021?text=Hi,%20I%20need%20quotation%20for%20LED%20Glow%20Sign%20or%20ACP%20Board" class="btn btn-primary card-btn">Inquire on WhatsApp</a>
+      <!-- 2. LED Acrylic 3D Glow Sign Board -->
+      <article class="card">
+        <div class="card-img-wrap">
+          <span class="card-badge">Shop Signage</span>
+          <img src="https://images.unsplash.com/photo-1542744094-3a31f272c490?auto=format&fit=crop&w=650&q=80" alt="LED Glow Sign Board ACP Signage Prayagraj">
         </div>
-      </div>
+        <div class="card-body">
+          <h4>3D LED Acrylic & ACP Glow Boards</h4>
+          <p>Dukaan aur showrooms ke liye customized ACP panel glow sign boards, waterproof Samsung LED modules, aur 3D letter embossing.</p>
+          <div class="tags">
+            <span class="tag">Heavy Iron Frame</span>
+            <span class="tag">Night Bright</span>
+            <span class="tag">Fitting Included</span>
+          </div>
+          <a href="https://wa.me/919598202021?text=Hi,%20Glow%20Sign%20Board%20ka%20quotation%20chahiye" class="btn card-btn">
+            Order On WhatsApp <i class="fa-solid fa-arrow-right" style="margin-left: 6px; font-size: 0.8rem;"></i>
+          </a>
+        </div>
+      </article>
 
-      <!-- 3. Self-Adhesive Vinyl & Lamination -->
-      <div class="product-card">
-        <img class="product-img" src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=700&q=80" alt="Vinyl Printing Prayagraj">
-        <div class="product-body">
-          <h3>Vinyl Graphics & Frost Film</h3>
-          <p>Ultra-high definition gloss, matte, one-way vision, and office glass frost privacy films for retail counters and corporate spaces.</p>
-          <ul class="product-features">
-            <li><i class="fa-solid fa-check"></i> Bubble-free application vinyl</li>
-            <li><i class="fa-solid fa-check"></i> Scratch-proof thermal protective lamination</li>
-            <li><i class="fa-solid fa-check"></i> Vivid photo-realistic 1440 DPI print</li>
-          </ul>
-          <a href="https://wa.me/919598202021?text=Hi,%20I%20need%20Vinyl%20Printing%20and%20Lamination" class="btn btn-primary card-btn">Inquire on WhatsApp</a>
+      <!-- 3. Self-Adhesive Vinyl Rolls -->
+      <article class="card">
+        <div class="card-img-wrap">
+          <span class="card-badge">High Definition</span>
+          <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=650&q=80" alt="Vinyl Sticker Printing Lamination Rolls Prayagraj">
         </div>
-      </div>
+        <div class="card-body">
+          <h4>Vinyl Printing & Lamination</h4>
+          <p>Self-adhesive gloss and matte vinyl stickers, one-way vision for glass windows, frosted office films, aur counter branding.</p>
+          <div class="tags">
+            <span class="tag">Bubble-Free</span>
+            <span class="tag">Scratch Resistant</span>
+            <span class="tag">Clear Adhesive</span>
+          </div>
+          <a href="https://wa.me/919598202021?text=Hi,%20Vinyl%20Printing%20karwani%20hai" class="btn card-btn">
+            Order On WhatsApp <i class="fa-solid fa-arrow-right" style="margin-left: 6px; font-size: 0.8rem;"></i>
+          </a>
+        </div>
+      </article>
 
-      <!-- 4. Sunboard & Foam Sheet Displays -->
-      <div class="product-card">
-        <img class="product-img" src="https://images.unsplash.com/photo-1509281373149-e957c6296406?auto=format&fit=crop&w=700&q=80" alt="Sunboard Printing Prayagraj">
-        <div class="product-body">
-          <h3>Sunboard & Cut-out Signs</h3>
-          <p>Rigid 3mm & 5mm density sunboard pasting for indoor in-store branding, product displays, exhibition booths, and clinical signboards.</p>
-          <ul class="product-features">
-            <li><i class="fa-solid fa-check"></i> Smooth flat surface direct mount</li>
-            <li><i class="fa-solid fa-check"></i> Custom CNC & contour shape cutting</li>
-            <li><i class="fa-solid fa-check"></i> Lightweight and long-lasting indoor life</li>
-          </ul>
-          <a href="https://wa.me/919598202021?text=Hi,%20I%20want%20to%20order%20Sunboard%20Printing" class="btn btn-primary card-btn">Inquire on WhatsApp</a>
+      <!-- 4. Roll-up Standee Display -->
+      <article class="card">
+        <div class="card-img-wrap">
+          <span class="card-badge">Events & Expo</span>
+          <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=650&q=80" alt="Roll up Standee Banner Printing Prayagraj">
         </div>
-      </div>
+        <div class="card-body">
+          <h4>Roll-up Standees (Aluminum Base)</h4>
+          <p>Exhibitions, conferences, school admissions aur shop displays ke liye portable pull-up standee banner, carry bag ke sath.</p>
+          <div class="tags">
+            <span class="tag">Standard 6x3 & 6x2.5 Ft</span>
+            <span class="tag">Non-Curl Media</span>
+            <span class="tag">Free Carry Bag</span>
+          </div>
+          <a href="https://wa.me/919598202021?text=Hi,%20Roll-up%20Standee%20order%20karna%20hai" class="btn card-btn">
+            Order On WhatsApp <i class="fa-solid fa-arrow-right" style="margin-left: 6px; font-size: 0.8rem;"></i>
+          </a>
+        </div>
+      </article>
 
-      <!-- 5. Roll-up Standees & Event Canopies -->
-      <div class="product-card">
-        <img class="product-img" src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=700&q=80" alt="Roll up Standee Printing Prayagraj">
-        <div class="product-body">
-          <h3>Roll-up Standees & Promo Tents</h3>
-          <p>Aluminum roll-up promotional pull-up standees and branded folding canopies for marketing camps, school admissions, and exhibitions.</p>
-          <ul class="product-features">
-            <li><i class="fa-solid fa-check"></i> Heavy base aluminum pull-up mechanism</li>
-            <li><i class="fa-solid fa-check"></i> Non-curl premium satin media</li>
-            <li><i class="fa-solid fa-check"></i> Free padded zipper carry bag</li>
-          </ul>
-          <a href="https://wa.me/919598202021?text=Hi,%20I%20need%20Roll-up%20Standees%20or%20Canopy" class="btn btn-primary card-btn">Inquire on WhatsApp</a>
+      <!-- 5. Sunboard & Foam Sheet Pasting -->
+      <article class="card">
+        <div class="card-img-wrap">
+          <span class="card-badge">Indoor Display</span>
+          <img src="https://images.unsplash.com/photo-1509281373149-e957c6296406?auto=format&fit=crop&w=650&q=80" alt="Sunboard Foam Sheet Printing Prayagraj">
         </div>
-      </div>
+        <div class="card-body">
+          <h4>Sunboard & Foam Sheet Signs</h4>
+          <p>3mm aur 5mm high-density sunboard sheet par vinyl pasting for clinic boards, in-store wall branding, aur product display cutouts.</p>
+          <div class="tags">
+            <span class="tag">3mm & 5mm Rigid Board</span>
+            <span class="tag">Smooth Flat Surface</span>
+            <span class="tag">Custom Cutout</span>
+          </div>
+          <a href="https://wa.me/919598202021?text=Hi,%20Sunboard%20Printing%20ka%20rate%20batao" class="btn card-btn">
+            Order On WhatsApp <i class="fa-solid fa-arrow-right" style="margin-left: 6px; font-size: 0.8rem;"></i>
+          </a>
+        </div>
+      </article>
 
-      <!-- 6. Highway Hoardings & Structure -->
-      <div class="product-card">
-        <img class="product-img" src="https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&w=700&q=80" alt="Hoarding Printing Prayagraj">
-        <div class="product-body">
-          <h3>Highway Mega Hoardings</h3>
-          <p>Heavy duty outdoor frontlit hoarding prints engineered to resist strong wind shear, extreme heat, and heavy monsoon rains.</p>
-          <ul class="product-features">
-            <li><i class="fa-solid fa-check"></i> High GSM heavy coated flex sheets</li>
-            <li><i class="fa-solid fa-check"></i> Seamless panelling & joint fabrication</li>
-            <li><i class="fa-solid fa-check"></i> Prime highway and junction visibility</li>
-          </ul>
-          <a href="https://wa.me/919598202021?text=Hi,%20I%20have%20an%20inquiry%20for%20Hoarding%20Printing" class="btn btn-primary card-btn">Inquire on WhatsApp</a>
+      <!-- 6. Outdoor Mega Hoardings -->
+      <article class="card">
+        <div class="card-img-wrap">
+          <span class="card-badge">Heavy Outdoor</span>
+          <img src="https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&w=650&q=80" alt="Highway Billboard Hoarding Printing Prayagraj">
         </div>
-      </div>
+        <div class="card-body">
+          <h4>Highway & Road Hoardings</h4>
+          <p>Large format heavy coated frontlit flex hoardings. High-tension wind and weather resistance with joint-free fabrication.</p>
+          <div class="tags">
+            <span class="tag">Large Format</span>
+            <span class="tag">Heavy GSM Coated</span>
+            <span class="tag">Highway Visible</span>
+          </div>
+          <a href="https://wa.me/919598202021?text=Hi,%20Hoarding%20Printing%20inquiry" class="btn card-btn">
+            Order On WhatsApp <i class="fa-solid fa-arrow-right" style="margin-left: 6px; font-size: 0.8rem;"></i>
+          </a>
+        </div>
+      </article>
 
     </div>
-  </section>
 
-  <!-- Complete Prayagraj Localities Coverage -->
-  <section class="section">
-    <div class="coverage-section">
-      <div class="section-head" style="margin-bottom: 20px;">
-        <span class="tag">Unmatched Local Network</span>
-        <h2>Services Active Across All Prayagraj Locations</h2>
-        <p>Whether you require a single emergency banner or bulk corporate branding, our express delivery vans and field installation staff cover every corner of the city.</p>
+    <!-- Prayagraj Localities Section -->
+    <div class="area-box">
+      <div class="section-title" style="margin-top: 0;">
+        <span>Service Areas</span>
+        <h3>Prayagraj Ke Sabhi Areas Me Delivery</h3>
       </div>
+      <p style="font-size: 0.83rem; color: var(--text-muted); margin-top: 4px;">
+        A to Z Printing covers all residential, commercial, and industrial zones across Prayagraj:
+      </p>
 
-      <div class="areas-cloud">
-        <span class="area-chip"><i class="fa-solid fa-location-crosshairs"></i> George Town</span>
-        <span class="area-chip"><i class="fa-solid fa-location-crosshairs"></i> Darbhanga Colony</span>
-        <span class="area-chip"><i class="fa-solid fa-location-crosshairs"></i> Civil Lines</span>
-        <span class="area-chip"><i class="fa-solid fa-location-crosshairs"></i> Old Katra & New Katra</span>
-        <span class="area-chip"><i class="fa-solid fa-location-crosshairs"></i> Stanley Road & Myorabad</span>
-        <span class="area-chip"><i class="fa-solid fa-location-crosshairs"></i> Mumfordganj</span>
-        <span class="area-chip"><i class="fa-solid fa-location-crosshairs"></i> Beli Road & Beli Goan</span>
-        <span class="area-chip"><i class="fa-solid fa-location-crosshairs"></i> Teliarganj & Rasulabad</span>
-        <span class="area-chip"><i class="fa-solid fa-location-crosshairs"></i> Phaphamau & Shantipuram</span>
-        <span class="area-chip"><i class="fa-solid fa-location-crosshairs"></i> Jhusi & Andawa</span>
-        <span class="area-chip"><i class="fa-solid fa-location-crosshairs"></i> Naini Industrial Area</span>
-        <span class="area-chip"><i class="fa-solid fa-location-crosshairs"></i> Dhoomanganj & Subedarganj</span>
-        <span class="area-chip"><i class="fa-solid fa-location-crosshairs"></i> Rajapur & Ashok Nagar</span>
-        <span class="area-chip"><i class="fa-solid fa-location-crosshairs"></i> Zero Road & Chowk</span>
-        <span class="area-chip"><i class="fa-solid fa-location-crosshairs"></i> Johnston Ganj & Mohatsim Ganj</span>
-        <span class="area-chip"><i class="fa-solid fa-location-crosshairs"></i> Mutthiganj & Kydganj</span>
-        <span class="area-chip"><i class="fa-solid fa-location-crosshairs"></i> Tagoretown & Alopi Bagh</span>
-        <span class="area-chip"><i class="fa-solid fa-location-crosshairs"></i> Lukerganj & Khuldabad</span>
-        <span class="area-chip"><i class="fa-solid fa-location-crosshairs"></i> Kareli & GTB Nagar</span>
-        <span class="area-chip"><i class="fa-solid fa-location-crosshairs"></i> Soraon & Mauaima Highway</span>
-        <span class="area-chip"><i class="fa-solid fa-location-crosshairs"></i> Jhalwa & IIIT Road</span>
-        <span class="area-chip"><i class="fa-solid fa-location-crosshairs"></i> Bamrauli & A
+      <div class="chips">
+        <span class="chip"><i class="fa-solid fa-location-dot"></i> George Town</span>
+        <span class="chip"><i class="fa-solid fa-location-dot"></i> Darbhanga Colony</span>
+        <span class="chip"><i class="fa-solid fa-location-dot"></i> Civil Lines</span>
+        <span class="chip"><i class="fa-solid fa-location-dot"></i> Old Katra</span>
+        <span class="chip"><i class="fa-solid fa-location-dot"></i> New Katra</span>
+        <span class="chip"><i class="fa-solid fa-location-dot"></i> Stanley Road</span>
+        <span class="chip"><i class="fa-solid fa-location-dot"></i> Myorabad</span>
+        <span class="chip"><i class="fa-solid fa-location-dot"></i> Mumfordganj</span>
+        <span class="chip"><i class="fa-solid fa-location-dot"></i> Beli Road</span>
+        <span class="chip"><i class="fa-solid fa-location-dot"></i> Teliarganj</span>
+        <span class="chip"><i class="fa-solid fa-location-dot"></i> Rasulabad</span>
+        <span class="chip"><i class="fa-solid fa-location-dot"></i> Phaphamau</span>
+        <span class="chip"><i class="fa-solid fa-location-dot"></i> Shantipuram</span>
+        <span class="chip"><i class="fa-solid fa-location-dot"></i> Jhusi & Andawa</span>
+        <span class="chip"><i class="fa-solid fa-location-dot"></i> Naini Industrial</span>
+        <span class="chip"><i class="fa-solid fa-location-dot"></i> Dhoomanganj</span>
+        <span class="chip"><i class="fa-solid fa-location-dot"></i> Subedarganj</span>
+        <span class="chip"><i class="fa-solid fa-location-dot"></i> Rajapur</span>
+        <span class="chip"><i class="fa-solid fa-location-dot"></i> Ashok Nagar</span>
+        <span class="chip"><i class="fa-solid fa-location-dot"></i> Zero Road</span>
+        <span class="chip"><i class="fa-solid fa-location-dot"></i> Johnston Ganj</span>
+        <span class="chip"><i class="fa-solid fa-location-dot"></i> Mutthiganj</span>
+        <span class="chip"><i class="fa-solid fa-location-dot"></i> Tagoretown</span>
+        <span class="chip"><i class="fa-solid fa-location-dot"></i> Alopi Bagh</span>
+        <span class="chip"><i class="fa-solid fa-location-dot"></i> Kareli</span>
+        <span class="chip"><i class="fa-solid fa-location-dot"></i> Soraon</span>
+        <span class="chip"><i class="fa-solid fa-location-dot"></i> Jhalwa & IIIT</span>
+        <span class="chip"><i class="fa-solid fa-location-dot"></i> Bamrauli</span>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p><strong>A to Z Printing (Flex Banner Printing)</strong></p>
+      <p>Darbhanga Colony, George Town, Prayagraj - 211002</p>
+      <p style="margin-top: 4px;">Phone: +91 95982 02021 | 24 Hours Open</p>
+    </div>
+  </main>
+
+  <!-- Sticky Bottom Bar for Mobile Thumb Reach -->
+  <div class="bottom-bar">
+    <a href="tel:09598202021" class="dock-btn dock-call">
+      <i class="fa-solid fa-phone"></i> Call Direct
+    </a>
+    <a href="https://wa.me/919598202021?text=Namaste%20A%20to%20Z%20Printing,%20mujhe%20printing%20order%20karna%20hai" class="dock-btn dock-wa">
+      <i class="fa-brands fa-whatsapp"></i> WhatsApp Quote
+    </a>
+  </div>
+
+</body>
+                                                </html>
+  
